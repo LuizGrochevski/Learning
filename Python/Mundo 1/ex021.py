@@ -1,0 +1,6 @@
+nome = str(input("Digite o seu nome:"))
+print(nome.upper())
+print(nome.lower())
+print(len(''.join(nome.split())))
+primeiro = nome.split()
+print((len(primeiro)))
