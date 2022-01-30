@@ -194,3 +194,80 @@ a = 42
 puts "Yes" if a > 10
 puts "Yes" unless a < 10
 
+# Logical Operators
+
+# And &&
+a = 42
+b = 8
+if a > 7 && b < 11
+    puts "Yes"
+end
+# outputs "Yes"
+
+# Or ||
+a = 3
+b = 5
+if a ==3 || b > 10
+    puts "Welcome"
+end
+# outputs "Welcome"
+
+
+# Not !
+a = 7
+puts !(a>5)
+# outputs false
+
+# case Statements
+a = 2
+
+case a
+when 1
+    puts "One"
+when 2
+    puts "Two"
+when 3
+    puts "Three"
+end
+# outputs "Two"
+
+age = 5
+
+case age
+when 1, 2, 3
+    puts "Little baby"
+when 4, 5
+    puts "Child"
+end
+# outputs "Child"
+
+age = 18
+
+case age
+when 1, 2, 3
+    puts "Little baby"
+when 4, 5
+    puts "Child"
+else
+    puts "Not a baby"
+end
+# outputs "Not a baby"
+
+# Loops
+x = 0
+while x < 10
+    puts x
+    x += 1
+end
+
+# until Loops
+a = 0
+until a > 10
+    puts "a = #{a}"
+    a +=2
+end
+
+# Ranges
+
+
+
