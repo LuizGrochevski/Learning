@@ -268,6 +268,185 @@ until a > 10
 end
 
 # Ranges
+a = (a..7).to_a
+puts a # [1, 2, 3, 4, 5, 6, 7]
 
+b = (79...89).to_a
+puts b # [79, 80, 81]
 
+c = ("a".."d").to_a
+puts c # [a, b, c, d]
+
+age = 42
+case age 
+when 0..14
+    puts "Child"
+when 15..24
+    puts "Youth"
+when 25..64
+    puts "Adult"
+else
+    puts "Senior"
+end
+
+# for Loop
+
+for i in (1..10)
+    puts i
+end
+
+# Break
+for i in 1..5
+    break if i > 3
+    puts i
+end
+# outputs:
+# 1
+# 2
+# 3
+
+# Next
+for i in 0..10
+    next if i %2 ==0
+    puts i
+end
+
+# loop do
+x = 0
+loop do
+    puts x
+    x += 1
+    break if x > 10
+end
+
+# Arrays
+items = ["Apple", "Orange", "Banana"]
+
+puts items[0]
+# outputs "Apple"
+
+items[1] = "Kiwi"
+# items = ["Apple", "Kiwi", "Orange", "Banana"]
+
+# Adding Elements
+arr = [5, "Dave", 15.88, false]
+
+puts arr[0] # 5
+puts arr[1] # "Dave"
+puts arr [-1] # false
+
+arr << 8
+puts arr
+
+arr.push(8)
+arr.insert(2, 8)
+
+# Removing Elements
+arr = [1, 2, 3]
+arr.pop
+print arr #[1, 2]
+
+arr = [2, 4, 6, 8]
+arr.delete_at(2)
+print arr
+# [2, 4, 8]
+
+# Array Ranges
+nums = [6, 3, 8, 7, 9]
+print nums[1..3]
+# [3, 8, 7]
+
+# Combining Arrays
+a = [1, 2, 3]
+b = [4, 5]
+res = a + b
+print res # [1, 2, 3, 4, 5]
+
+a = [1, 2, 3, 4, 5]
+b = [2, 4, 5, 6]
+res = a - b
+print res #[1, 3]
+
+# Boolean Operations
+a = [2, 3, 7, 8]
+b = [2, 7, 9]
+print a & b # [2, 7]
+
+a = [2, 3, 7, 8]
+b = [2, 7, 9]
+print a | b # [2, 3, 7, 8, 9]
+
+# Moving Elements
+
+arr = [5, 3, 8]
+res = arr.reverse
+print res # [8, 3, 5]
+
+arr = [1, 2, 3]
+print arr.reverse!
+
+# Array Methods
+=begin
+(array.length) or (array.size) returns the number of elements in array.
+(array.sort) returns a new array with the elements sorted
+(array.uniq) returns a new array with duplicate values removed from array.
+(array.uniq!) removes duplicates in place.
+(array.freeze) safeguards the array, preventing it from being modified.
+(array.include?(obj)) returns true if obj is present in array, false otherwise.
+(array.min) returns the element with the minimum value.
+(array.max) returns the element with the maximum value.
+=end
+
+arr = ["a", "b", "c"]
+for x in arr
+    puts "Value: #{x}"
+end
+
+# Hashes
+ages = { "David" => 28, "Amy" => 19, "Rob" => 42 }
+puts ages["Amy"]
+# outputs 19
+
+# Symbols
+a = :id
+
+# Hashes & Symbols
+ h = {:nema => "Dave", :age => 28, :gender => "male"}
+puts h[:age]
+
+# A shorter way of writing the same code as above is the following:
+h = {name:"Dave", age:28, gender:"male"}
+puts h[:age]
+
+=begin
+(hash.delete(key)) removes the key-value pair from hash by key.
+(hash.key(value)) returns the key for the given value in hash, nil if no matching value is found.
+(hash.invert) creates a new hash, reversing keys and values from hash; that is, in the new hash, the keys from hash become values and values become keys.
+(hash.keys) returns a new array with keys from hash.
+(hash.values) returns a new array containing all the values of hash.
+(hash.length) returns the length of hash as an integer.
+=end
+# For example:
+car = {brand:"BMW", year:2016, color:"red", length:205}
+car.delete(:length)
+puts car.values
+
+# outputs:
+# BMW
+# 2016
+# red
+
+# Nested Arrays
+arr = [ [1, 2, 3], [4, 5, 6] ]
+puts arr[1][2]
+#outputs 6
+
+# Nested Hashes
+cars = {
+    bmw: { year:2016, color:"red"},
+    mercedes: { year:2012, color:"black"},
+    porsche: { year:2014, color:"white"}
+}
+puts cars[:bmw][:color]
+# outputs "red"
 
