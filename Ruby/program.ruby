@@ -377,7 +377,6 @@ b = [2, 7, 9]
 print a | b # [2, 3, 7, 8, 9]
 
 # Moving Elements
-
 arr = [5, 3, 8]
 res = arr.reverse
 print res # [8, 3, 5]
@@ -449,4 +448,42 @@ cars = {
 }
 puts cars[:bmw][:color]
 # outputs "red"
+
+# Iterators
+arr = [2, 4, 6]
+arr.each do |x|
+    puts x
+end
+
+arr = [2, 4, 6]
+sum = 0
+arr.each do |x|
+    sum += x
+end
+
+puts sum # 12
+
+sizes = {svga:800, hd:1366, uhd:3840}
+sizes.each do |key, value|
+    puts "#{key}=>#{value}"
+end
+
+sizes = {svga:800, hd:1366. uhd:3840}
+sizes.each { |key, valule| puts "#{key}=>#{value}"}
+
+10.times do
+    puts "Hi"
+end
+
+# Letter Frequency
+    # a sample text
+text = "I am learning Ruby and it is fun!"
+text.downcase!
+freqs = {}
+freqs.default = 0
+
+text.each_char { |char| freqs[char] += 1}
+
+("a".."z").each {|x| puts "#{x} : #{freqs[x]}"}
+
 
