@@ -233,5 +233,46 @@ public class program {
         10
         */
 
+        /*/ do...while Loops /*/
+        // A do...while loop is similar to a while loop, except that a do...while loop is guaranteed to execute at least one time.
+        int x = 1;
+        do {
+            System.out.println(x);
+            x++;
+        } while(x < 5);
+        /*
+        1
+        2
+        3
+        4
+        */
+
+        int x = 1;
+        do {
+            System.out.println(x);
+            x++;
+        } while(x < 0);
+
+        /*/ Loop Control Statements /*/
+        /*The break and continue statements change the loop's execution flow.
+        The break statement terminates the loop and transfers execution to the statement immediately following the loop.*/
+        int x = 1;
+        
+        while(x > 0){
+            System.out.println(x);
+             if(x == 4){
+                 break;
+             }
+             x++;
+        }
+
+        for(int x=10; x<=40; x=x+10){
+            if(x == 30){
+                continue;
+            }
+            System.out.println(x);
+        }
+
+
     }
 }
