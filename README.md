@@ -1,3 +1,3 @@
 
-# Repositorio onde atualizo o que estou estudando
+# Repositório onde atualizo o que estou estudando
 
