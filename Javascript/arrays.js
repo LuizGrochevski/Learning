@@ -1,6 +1,6 @@
 //vetores e arrays
 //como declarrar array
-/*
+
 let array = ['string', 1, true];
 console.log(array[2])
 
@@ -37,7 +37,7 @@ console.log(array);
 //slice
 let novoarray = arrayslice(0, 3);
 console.log(novoarray);
-*/
+
 
 //Objetos
 
