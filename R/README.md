@@ -1,1 +1,0 @@
-### Aprendendo R atravez do [Sololearn](www.sololearn.com) 
