@@ -4,7 +4,7 @@
 let array = ['string', 1, true];
 console.log(array[2])
 
-let array = ['String', 1, true, ['array1'], ['array2'], ['array3']];
+let array1 = ['String', 1, true, ['array1'], ['array2'], ['array3']];
 console.log(array[0]);
 
 //Manipulando arrays
