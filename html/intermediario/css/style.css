@@ -2,11 +2,26 @@ body{
     font-size: 1.2rem;
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 ul{
     list-style: none;
 }
+
+form{
+    overflow: hidden;
+    margin: auto;
+    width: 80%;
+    background-color: peru;
+    padding: 15px;
+    font-size: 18px;
+}
+
+input{
+    font-size: 14px;
+}
+
 .li{
     float: left;
     padding: 10px;
@@ -145,6 +160,16 @@ li{
 
 @media screen and (max-width: 800px){
 
+    form{
+        background-color: crimson;
+    }
+    
+    input{
+        float: none;
+        margin-bottom: 5px;
+        padding: 10px;
+    };
+
     .header{
         background-color: coral;
         
@@ -170,6 +195,16 @@ li{
 }
 
 @media screen and (max-width: 550px){
+
+    form{
+        background-color: coral;
+    }
+
+    input{
+        float: none;
+        margin-bottom: 5px;
+        padding: 10px;
+    };
 
     .header{
         background-color: crimson;
