@@ -9,7 +9,7 @@ console.log(array[0]);
 
 //Manipulando arrays
 //forEach
-array.forEach(function(item, index){console.log(item, index)});
+array.forEach(function (item, index) { console.log(item, index) });
 
 //push
 array.push('novo item');
@@ -41,7 +41,7 @@ console.log(novoarray);
 
 //Objetos
 
-let object = {string: 'String',  number: 1, boolean: true, array: ["array"], objectInterno: {objetointerno: 'interno'}};
+let object = { string: 'String', number: 1, boolean: true, array: ["array"], objectInterno: { objetointerno: 'interno' } };
 console.log(object.boolean);
 
 var string = object.string;
@@ -50,5 +50,5 @@ console.log(string)
 var arrayInterno = object.array;
 console.log(arrayInterno);
 
-var {string, boolen, objectInterno} = object;
+var { string, boolen, objectInterno } = object;
 console.log(string, boolean, objectInterno);

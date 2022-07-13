@@ -1,40 +1,40 @@
-*{
-    color:black;
+* {
+    color: black;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body{
+body {
     margin: 0px;
     padding: 0px;
     background-color: black;
 
 }
 
-img{
+img {
     position: relative;
 }
 
-#nome{
+#nome {
     position: absolute;
     top: 15px;
     left: 25px;
 }
 
-#instagram{
+#instagram {
     position: relative;
     top: -250px;
     left: 30px;
     font-size: 25px;
 }
 
-#twitter{
+#twitter {
     position: relative;
     top: -240px;
     left: 30px;
     font-size: 25px;
 }
 
-#youtube{
+#youtube {
     position: relative;
     top: -230px;
     left: 30px;

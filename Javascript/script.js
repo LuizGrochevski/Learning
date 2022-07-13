@@ -2,15 +2,15 @@
 
 //boolean
 var VouF = false;
-console.log(typeof(VouF));
+console.log(typeof (VouF));
 
 //number
 var numeroQualquqer = 1;
-console.log(typeof(numeroQualquqer));
+console.log(typeof (numeroQualquqer));
 
 //String
 var nome = "luiz"
-console.log(typeof(nome));
+console.log(typeof (nome));
 
 //como declarar
 var variavel = "felipe";
@@ -29,7 +29,7 @@ console.log(variavel3);
 var escopolocal = 'global';
 console.log(escopolocal);
 
-function escopolocal(){
+function escopolocal() {
     let escopolocalinterno = "local"
     console.log(escopolocalinsterno);
 }
