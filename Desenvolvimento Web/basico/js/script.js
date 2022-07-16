@@ -47,21 +47,21 @@ var vazio = null;
 */
 
 //CONDICIONAIS - IF
-if(number == 10){
-    blabla ="Chablau!";
+if (number == 10) {
+    blabla = "Chablau!";
 }
-else if(boolean == true){
+else if (boolean == true) {
     blabla = "OPA";
 }
-else if(number == 2){
+else if (number == 2) {
     blabla = "é nois";
 }
-else{
+else {
     blablba = "Hello world!";
 }
 
 // CONDICIONAIS - SWITCH
-switch(blabla){
+switch (blabla) {
     case "Chablau!":
         console.log("Melhor!")
         break;
@@ -79,12 +79,12 @@ switch(blabla){
 // REPETIÇÃO FOR - WHILE
 var number = 5;
 
-for(var i = 0; i < number; i++){
+for (var i = 0; i < number; i++) {
     console.log(i)
 }
 console.log("Acabou o for")
 
-while(number < 10){
+while (number < 10) {
     console.log("Number: " + number)
     number++;
 }
@@ -98,12 +98,12 @@ console.log("tamanho do array: " + vetor.length)
 
 var alunos = ["Igor", "Henry", "Juan", "Noa", "Julih", "Bizinha", "Bokkor"]
 
-for(var i in alunos){
+for (var i in alunos) {
     console.log(alunos[i])
 }
 
 // FUNÇÕES
-function media(n1, n2){
+function media(n1, n2) {
     var nota1 = n1;
     var nota2 = n2;
     var media = (nota1 + nota2) / 2;
@@ -115,7 +115,7 @@ var resultado2 = media(3, 6);
 
 console.log(resultado1 + " E " + resultado2)
 
-function saudacao(){
+function saudacao() {
     return "Olá Mundo!";
 }
 
@@ -133,4 +133,83 @@ console.log(objetos["nota1"][1]);
 
 var novaProp = "sobrenome"
 objetos[novaProp] = "de Mello";
+
+// OBJETOS - MÉTODOS
+var calcMedia = function () {
+    return (this.notas[0] + this.notas[1]) / 2;
+}
+
+var aluno1 = {
+    nome: "João",
+    notas: [6, 8],
+
+    media: calcMedia
+}
+
+var aluno2 = {
+    nome: "Igor",
+    notas: [7, 8],
+
+    media: calcMedia
+}
+
+console.log(aluno2.nome, aluno2.media());
+
+console.log(aluno1.nome, aluno1.media());
+
+// OBJETOS - CONSTRUTORES 
+
+function aluno(nome, n1, n2) {
+    this.nome = nome;
+    this.nota1 = n1;
+    this.nota2 = n2;
+
+    this.media = function media() {
+        return (this.nota1 + this.nota2) / 2;
+    }
+
+}
+
+var a = new aluno("Cherrygumms", 10, 10);
+console.log(a);
+
+
+function criarAluno(nome, n1, n2) {
+    return {
+        nome: nome, nota1: n1, nota2: n2, media: function () {
+            return (this.nota1 + this.nota2) / 2;
+        }
+    }
+}
+
+
+var turma = [
+    criarAluno("Bokor", 8.3, 6),
+    criarAluno("Julih", 8.7, 9),
+    criarAluno("Bizinha", 7.5, 7),
+    criarAluno("Mili", 10, 10),
+]
+
+var aluno = turma[1]
+
+for (var aluno of turma) {
+    console.log(aluno.nome + " - " + aluno.media());
+}
+
+// DATAS
+var d = new Date("01/22/2002");
+
+console.log(d);
+
+// COST LET E VAR
+
+var numero1 = 4;
+let numero2 = 5;
+const numero3 = true;
+
+
+console.log(numero1);
+console.log(numero2);
+console.log(numero3);
+
 
